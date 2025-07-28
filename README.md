@@ -177,3 +177,14 @@ TArray<T*> GetObjectsFromPool() const;
 * Always return pooled actors using `ReturnActor()` instead of `DestroyActor()`.
 
 ---
+
+---
+layout: default
+title: "[SAVIOR] Create Once : SGUID"
+---
+
+{% include blueprint.html
+   id="c4rjre_z"
+   title="Create Once : SGUID"
+   description="Creates a new GUID only when Object's 'SGUID' is invalid. If existing SGUID is valid then no new values are generated for this Object. This is important for Runtime-Generated Objects that require a 'SGUID' to respawn from Save Data."
+%}
